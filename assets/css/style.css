@@ -1,7 +1,73 @@
-*, *::after, *::before {
-    box-sizing: border-box;
+body { display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+#board {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    cursor: pointer;
+    position: relative;
 }
 
-body {
-    margin: 0%;
+.right-border {
+    border-right: 0.2em solid yellow;
+}
+
+.bottom-border {
+    border-bottom: 0.2em solid yellow;
+}
+
+.strike {
+position: absolute;
+background-color: red;
+}
+
+.strike-row-1 {
+    width: 100%;
+    height: 4px;
+    top: 15%;
+}
+
+.strike-row-2 {
+    width: 100%;
+    height: 4px;
+    top: 48%;
+}
+
+.strike-row-3 {
+    width: 100%;
+    height: 4px;
+    top: 83%;
+}
+
+.strike-column-1 {
+    width: 4px;
+    height: 100%;
+    left: 15%;
+}
+
+.strike-column-2 {
+    width: 4px;
+    height: 100%;
+    left: 48%;
+}
+
+.strike-column-3 {
+    width: 4px;
+    height: 100%;
+    left: 83%;
+}
+
+h1 {
+    color: red;
+}
+
+.tile {
+    color: blue;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

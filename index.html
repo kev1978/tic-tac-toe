@@ -4,27 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <script src="script.js" defer></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="script.js"></script>
+    <title>Tic Tac Toe</title>
 </head>
 <body>
-    <div class="board" id="board"></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-    </div>
-
-    <div class="win-message" id="win-message">
-        <div data-win-message-text></div>
-        <button id="restart">Restart</button>
-    </div>
+        <h1>Tic Tac Toe</h1>
+        <div id="board">
+            <div data-index="1" class="tile right-border bottom-border">x</div>
+            <div data-index="2" class="tile right-border bottom-border">x</div>
+            <div data-index="3" class="tile bottom-border">x</div>
+            <div data-index="4" class="tile right-border bottom-border">x</div>
+            <div data-index="5" class="tile right-border bottom-border">x</div>
+            <div data-index="6" class="tile bottom-border">x</div>
+            <div data-index="7" class="tile right-border">x</div>
+            <div data-index="8" class="tile right-border">x</div>
+            <div data-index="9" class="tile ">x</div>
+            <div id="strike" class="strike strike-column-3"></div>
+            
+        </div>
 
 </body>
 </html>
